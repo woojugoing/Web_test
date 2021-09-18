@@ -1,28 +1,59 @@
+
 <!DOCTYPE html>
 <html>
 <head>
-    <style>
-
-table, td, th 요소의 경계선을 1픽셀 두께의 파란색 실선으로 설정
-        table, td, th {
-            border: 1px solid blue;
-        }
-    </style>
+    <title>Web shop Page</title>
+    <link rel="stylesheet" type="text/css" href="mystyle.css" />
 </head>
 <body>
-    <table>
-        <tr>
-            <th>이름</th>
-            <th>이메일</th>
-        </tr>
-        <tr>
-            <td>김경원</td>
-            <td>chul@google.com</td>
-        </tr>
-        <tr>
-            <td>김영희</td>
-            <td>young@google.com</td>
-        </tr>
-    </table>
+    <header>
+        <h1>
+            <img src="images/shop.png" width="50" height="50" /><a href="index.html">Web Shop</a></h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html">About Us</a></li>
+            <li><a href="index.html">News</a></li>
+            <li><a href="index.html">My Account</a></li>
+            <li><a href="index.html">Contacts</a></li>
+        </ul>
+    </nav>
+    <aside id="left">
+        <h4>카테고리</h4>
+        <ul>
+            <li>컴퓨터</a></li>
+            <li>의류</a></li>
+            <li>음악</a></li>
+            <li>영화</a></li>
+            <li>스포츠/레저</a></li>
+            <li>가구/인테리어</a></li>
+            <li>식품</a></li>
+        </ul>
+    </aside>
+    <section id="main">
+    </section>
+    <aside id="right">
+        <div id="shopcart">
+            <h4>Shopping Cart</h4>
+            현재 쇼핑카트에 물품이 없습니다.<br />
+            <a href="shopcart.html">쇼핑카트 보기</a>
+        </div>
+        <div id="login">
+            <h4>Log In</h4>
+            <form action="#">
+                아이디               
+                <input type="text" /><br />
+                패스워드               
+                <input type="password" /><br />
+                <input type="submit" value="로그인" />
+                <input type="reset" value="초기화" /><br />
+                <a href="register.html" target="_blank" id="register">회원가입</a>
+                <a href="#" id="forgot">비밀번호분실</a>
+            </form>
+        </div>
+    </aside>
+    <footer>Copyright (c) 2013 Web Shop</footer>
 </body>
 </html>
+
